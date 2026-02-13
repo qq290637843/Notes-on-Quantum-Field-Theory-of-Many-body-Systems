@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1060,         20]
-NotebookDataLength[      9406,        298]
-NotebookOptionsPosition[      8262,        265]
-NotebookOutlinePosition[      8684,        282]
-CellTagsIndexPosition[      8641,        279]
+NotebookDataLength[     10790,        340]
+NotebookOptionsPosition[      9425,        303]
+NotebookOutlinePosition[      9847,        320]
+CellTagsIndexPosition[      9804,        317]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -261,10 +261,48 @@ Cell[BoxData[
  CellChangeTimes->{3.979787185032072*^9},
  CellLabel->
   "Out[106]=",ExpressionUUID->"727c46fb-5b8a-5441-ba58-0c2c0c5b0757"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{"u", "+", "x"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9799807940028152`*^9, 3.979980851161932*^9}},
+ CellLabel->
+  "In[114]:=",ExpressionUUID->"db34a094-ed90-644c-9638-5283c03fa254"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"Sin", "[", "u", "]"}], "+", 
+   RowBox[{
+    RowBox[{"Cos", "[", "u", "]"}], " ", "x"}], "-", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"Sin", "[", "u", "]"}], " ", 
+    SuperscriptBox["x", "2"]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "x", "]"}], "3"],
+    SeriesData[$CellContext`x, 0, {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`x, 0, {
+    Sin[$CellContext`u], 
+    Cos[$CellContext`u], Rational[-1, 2] Sin[$CellContext`u]}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9799808028088455`*^9, {3.9799808399143543`*^9, 3.9799808515191536`*^9}},
+ CellLabel->
+  "Out[114]=",ExpressionUUID->"c7149053-67b8-9c48-bea5-4c28496bc56a"]
 }, Open  ]]
 },
 WindowSize->{569.25, 609.75},
-WindowMargins->{{412.5, Automatic}, {45, Automatic}},
+WindowMargins->{{382.5, Automatic}, {39, Automatic}},
 FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (2024\:5e7412\:670826\
 \:65e5)",
 StyleDefinitions->"Default.nb",
@@ -312,6 +350,10 @@ Cell[7361, 233, 189, 4, 32, "Output",ExpressionUUID->"4fbc19ad-a3b2-c94f-98bf-56
 Cell[CellGroupData[{
 Cell[7587, 242, 386, 10, 28, "Input",ExpressionUUID->"925dc270-2c15-2740-8684-8cb71095c233"],
 Cell[7976, 254, 270, 8, 52, "Output",ExpressionUUID->"727c46fb-5b8a-5441-ba58-0c2c0c5b0757"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8283, 267, 348, 9, 28, "Input",ExpressionUUID->"db34a094-ed90-644c-9638-5283c03fa254"],
+Cell[8634, 278, 775, 22, 45, "Output",ExpressionUUID->"c7149053-67b8-9c48-bea5-4c28496bc56a"]
 }, Open  ]]
 }
 ]
